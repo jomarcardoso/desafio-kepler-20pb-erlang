@@ -20,11 +20,11 @@ como os seguintes requisitos:
 - Cada molécula gerada, hidrogênio e oxigênio deve ser um processo em Erlang;
 - O tempo para que cada molécula adquira energia suficiente deve variar entre 10s e 30s;
 - A geração de moléculas deve ser constante e de forma aleatória com intervalo de tempo
-parametrizável;
+  parametrizável;
 - Cada processo deve ser identificado unicamente e apresentar uma mensagem quando
-criado informando esta identificação;
+  criado informando esta identificação;
 - A aplicação deve identificar as combinações realizadas, apresentando a identificação
-dos elementos combinados;
+  dos elementos combinados;
 
 ## Referência:
 
