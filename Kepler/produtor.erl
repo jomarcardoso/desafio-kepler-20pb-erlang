@@ -2,13 +2,13 @@
 -export([startProdutor/2]).
 -import(atomo, [startAtomo/3]).
 
-random(X,Y) ->
-    Result = round(rand:uniform((Y - X) + X)),
+random(Min, Max) ->
+    Result = round(rand:uniform(Max - Min) + Min),
     Result.
 
 startProdutor(Interval, PidKepler) ->
     Time = random(10, 30),
-    Type = random(1, 2),
+    Type = round(rand:uniform(2)),
 
     if
         Type == 1 ->
