@@ -5,8 +5,7 @@
 loop(State) ->
     receive
         {Type} ->
-            String = "Atomo do tipo " ++ Type,
-            io:format(String ++ " recebido.~n"),
+            io:format("Atomo do tipo ~p recebido.~n", [Type]),
 
             Increment = fun(X) -> X + 1 end, 
             NewState = maps:update_with(Type, Increment, 1, State),
