@@ -25,6 +25,24 @@ como os seguintes requisitos:
   criado informando esta identificação;
 - A aplicação deve identificar as combinações realizadas, apresentando a identificação
   dos elementos combinados;
+  
+## Instruções de uso
+
+Para executar o código, primeiro todos os módulos devem ser compilados. No diretório em que estão todos os códigos fontes, utilizar os comandos:
+
+```
+c(kepler).
+c(produtor).
+c(atomo).
+```
+
+Após compilar todos os módulos, o código deve ser iniciado pelo processo principal, o Kepler, utilizando um valor em milissegundos como parâmetro. Como no exemplo:
+
+```		
+kepler:startKepler(3000).
+```
+
+Para interromper o processo, basta utilizar o comando Ctrl + C.
 
 ## Referência:
 
